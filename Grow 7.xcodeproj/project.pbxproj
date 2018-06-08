@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94A9533DCCA1DF2F4A9BD780 /* Pods_Grow_7.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D789D2CE34C78A40EDB104 /* Pods_Grow_7.framework */; };
 		A05722D520C9FBC700FFD2D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05722D420C9FBC700FFD2D6 /* AppDelegate.swift */; };
 		A05722D720C9FBC700FFD2D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05722D620C9FBC700FFD2D6 /* ViewController.swift */; };
 		A05722DA20C9FBC700FFD2D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A05722D820C9FBC700FFD2D6 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A03C390A3566FF555481FB2 /* Pods-Grow 7.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grow 7.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grow 7/Pods-Grow 7.release.xcconfig"; sourceTree = "<group>"; };
 		A05722D120C9FBC700FFD2D6 /* Grow 7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grow 7.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05722D420C9FBC700FFD2D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A05722D620C9FBC700FFD2D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		A05722DB20C9FBC900FFD2D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A05722DE20C9FBC900FFD2D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A05722E020C9FBCA00FFD2D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3D789D2CE34C78A40EDB104 /* Pods_Grow_7.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grow_7.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F903728039396D86448AF7 /* Pods-Grow 7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grow 7.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grow 7/Pods-Grow 7.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94A9533DCCA1DF2F4A9BD780 /* Pods_Grow_7.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BF8E1E09C6ADCD92D55815D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3D789D2CE34C78A40EDB104 /* Pods_Grow_7.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A05722C820C9FBC700FFD2D6 = {
 			isa = PBXGroup;
 			children = (
 				A05722D320C9FBC700FFD2D6 /* Grow 7 */,
 				A05722D220C9FBC700FFD2D6 /* Products */,
+				D8716ABF16DEF26C5DEC16BF /* Pods */,
+				4BF8E1E09C6ADCD92D55815D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = "Grow 7";
 			sourceTree = "<group>";
 		};
+		D8716ABF16DEF26C5DEC16BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8F903728039396D86448AF7 /* Pods-Grow 7.debug.xcconfig */,
+				8A03C390A3566FF555481FB2 /* Pods-Grow 7.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A05722E320C9FBCA00FFD2D6 /* Build configuration list for PBXNativeTarget "Grow 7" */;
 			buildPhases = (
+				C0078868CE00114D13EE918F /* [CP] Check Pods Manifest.lock */,
 				A05722CD20C9FBC700FFD2D6 /* Sources */,
 				A05722CE20C9FBC700FFD2D6 /* Frameworks */,
 				A05722CF20C9FBC700FFD2D6 /* Resources */,
+				ED82257DFC380BE2ECE00976 /* [CP] Embed Pods Frameworks */,
+				C3DA7C83CD9283CEC3C32836 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C0078868CE00114D13EE918F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Grow 7-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3DA7C83CD9283CEC3C32836 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grow 7/Pods-Grow 7-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED82257DFC380BE2ECE00976 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Grow 7/Pods-Grow 7-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grow 7/Pods-Grow 7-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A05722CD20C9FBC700FFD2D6 /* Sources */ = {
@@ -278,15 +359,13 @@
 		};
 		A05722E420C9FBCA00FFD2D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F903728039396D86448AF7 /* Pods-Grow 7.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JG98S5E585;
 				INFOPLIST_FILE = "Grow 7/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hmdev.Grow-7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +375,13 @@
 		};
 		A05722E520C9FBCA00FFD2D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A03C390A3566FF555481FB2 /* Pods-Grow 7.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JG98S5E585;
 				INFOPLIST_FILE = "Grow 7/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hmdev.Grow-7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
